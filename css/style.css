@@ -85,13 +85,15 @@ header {
     top: 0px;
     left: 0px;
     height: 80px;
+    /* Allineo il contenuto centralmente in altezza */
+    align-content: center;
 }
 
 .menu-header {
     background-color: var(--color-orange);
     color: white;
+    /* Allineo il menu di destra e sinistra centralmente in altezza */
     align-items: center;
-    align-content: center;
     font-weight: 600;
 }
 
@@ -183,7 +185,8 @@ e menu destro  del 33,3% circa dei 1200px del suo container padre */
 .sustainability {
     background-color: var(--color-green);
     left: 90px;
-    /* transform: translate(-85%); */
+    /* Oppure
+    transform: translate(90px); */
 }
 
 .sustainability-without-discount {
