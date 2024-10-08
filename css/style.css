@@ -64,6 +64,21 @@ ul {
     gap: 10px;
 }
 
+/* Cambio il colore del testo dei link dei menu e imposto
+la sottolineatura su essi al passaggio del mouse */
+/* Regola comune */
+ul li a:hover {
+    text-decoration: underline;
+}
+/* Colore testo nel menu dell'header */
+ul li a:hover {
+    color: var(--color-black);
+}
+/* Colore testo nel menu del footer  */
+.footer-menu ul li a:hover {
+    color: var(--color-orange);
+}
+
 /* Cambio i colori delle ancore del menu dell'header e del footer */
 li a {
     color: white;
@@ -246,6 +261,9 @@ footer {
 .footer-menu i {
     font-size: 26px;
 }
+
+/* Imposto un colore diverso (arancione) al passaggio del
+mouse sulle icone social */
 .footer-menu i:hover {
     color: var(--color-orange);
 }
