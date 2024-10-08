@@ -193,5 +193,18 @@ e menu destro  del 33,3% circa dei 1200px del suo container padre */
     text-decoration: line-through;
 }
 
+.product-column {
+    cursor: pointer;
+}
+/* Immagine nascosta per l'hover */
+img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
+.product-column:hover img.hover-image {
+    display: block;
+}
 
