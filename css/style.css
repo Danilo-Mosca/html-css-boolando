@@ -18,7 +18,7 @@
 
 /* Classe di debug */
 .debug {
-    border: 1px solid blue;
+    border: 1px solid red;
 }
 
 body {
@@ -208,3 +208,8 @@ img.hover-image {
     display: block;
 }
 
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+}
