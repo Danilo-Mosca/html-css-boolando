@@ -18,8 +18,15 @@
 
 /* Classe di debug */
 .debug {
-    border: 1px solid red;
+    border: 1px solid blue;
 }
-body {
-    background: #000;
+
+/* Larghezza dei container */
+.menu-header {
+    background-color: var(--color-orange);
+}
+.container {
+    max-width: 1200px;
+    /* Allineo il container al centro */
+    margin: 0 auto;
 }
