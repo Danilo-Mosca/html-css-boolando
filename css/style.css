@@ -137,7 +137,9 @@ e menu destro  del 33,3% circa dei 1200px del suo container padre */
     margin-bottom: 80px;
 }
 
-/* Inserisco le immagini in tutto il div in esse contenute con width: 100% */
+/* Inserisco le immagini in tutto il div in esse contenute 
+   con "display: block" e "width: 100%" così da non farle 
+   espandere oltre il suo contenitore */
 .product-column img {
     width: 100%;
     display: block;
@@ -154,6 +156,10 @@ e menu destro  del 33,3% circa dei 1200px del suo container padre */
     background-color: white;
     padding: 3px 15px;
     margin-top: 10px;
+}
+.product-column .hearth:hover{
+    color: red;
+    
 }
 
 /* Label sconto e sostenibilità */
@@ -218,14 +224,16 @@ img.hover-image {
     display: none;
 }
 
+/* Assegno l'hover al contenitore dell'immagine
+così da far cambiare immagine al passaggio su questa */
 .product-column:hover img.hover-image {
     display: block;
 }
 
 /* Footer */
 footer {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: black;
     color: white;
     line-height: 50px;
