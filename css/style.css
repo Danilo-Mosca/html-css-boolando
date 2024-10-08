@@ -136,7 +136,9 @@ e menu destro  del 33,3% circa dei 1200px del suo container padre */
     display: block;
 }
 
-/* Icone,testi e position degli elementi nei prodotti */
+/* Label,testi e position degli elementi nei prodotti */
+
+/* Icona heart */
 .hearth {
     position: absolute;
     top: 0px;
@@ -145,4 +147,28 @@ e menu destro  del 33,3% circa dei 1200px del suo container padre */
     background-color: white;
     padding: 3px 15px;
     margin-top: 10px;
+}
+
+/* Label sconto e sostenibilità */
+.discount, .sustainability, .sustainability-without-discount {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    padding: 5px 20px 5px;
+    font-weight: 600;
+    text-align: center;
+}
+.discount {
+    background-color: var(--color-red);
+    width: 80px;
+    left: 0px;
+}
+.sustainability {
+    background-color: var(--color-green);
+    left: 90px;
+    /* transform: translate(-85%); */
+}
+.sustainability-without-discount {
+    background-color: var(--color-green);
+    left: 0px;
 }
