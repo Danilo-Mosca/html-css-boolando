@@ -1,0 +1,25 @@
+/* Generals */
+
+/* Palette colori */
+:root {
+	--color-orange: #ff6900;
+	--color-red: #ff0000;
+	--color-green: #008000;
+	--color-black: #1a1a1a;
+	--color-light-grey: #c9cdcf;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classe di debug */
+.debug {
+    border: 1px solid red;
+}
+body {
+    background: #000;
+}
