@@ -243,3 +243,6 @@ footer {
 .footer-menu i {
     font-size: 26px;
 }
+.footer-menu i:hover {
+    color: var(--color-orange);
+}
