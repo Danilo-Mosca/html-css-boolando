@@ -2,11 +2,11 @@
 
 /* Palette colori */
 :root {
-	--color-orange: #ff6900;
-	--color-red: #ff0000;
-	--color-green: #008000;
-	--color-black: #1a1a1a;
-	--color-light-grey: #c9cdcf;
+    --color-orange: #ff6900;
+    --color-red: #ff0000;
+    --color-green: #008000;
+    --color-black: #1a1a1a;
+    --color-light-grey: #c9cdcf;
 }
 
 /* Reset */
@@ -21,6 +21,10 @@
     border: 1px solid blue;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Larghezza dei container */
 .container {
     max-width: 1200px;
@@ -33,15 +37,19 @@
     display: flex;
     flex-direction: row;
 }
+
 .between-display {
     justify-content: space-between;
 }
+
 .flex-wrap {
     flex-wrap: wrap;
 }
+
 .justify-content-start {
     justify-content: flex-start;
-} 
+}
+
 .justify-content-end {
     justify-content: flex-end;
 }
@@ -51,14 +59,11 @@ ul {
     list-style: none;
     gap: 10px;
 }
+
 /* Cambio i colori delle ancore del menu nell'header */
 .menu-header li a {
     color: white;
     text-decoration: none;
-}
-
-.menu-right ul li {
-    
 }
 
 /* Sezione header */
@@ -67,24 +72,66 @@ header {
     width: 100%;
     box-shadow: 0px 3px 8px var(--color-black);
 }
+
+/* Trasformo header-class in fixed così da rimanere in alto e sempre visibile */
+.header-class {
+    position: fixed;
+    /* imposto la visibilità maggiore di tutti */
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+}
+
 .menu-header {
     background-color: var(--color-orange);
     color: white;
     align-items: center;
     align-content: center;
-    height: 100px;
+    font-weight: 600;
 }
+
 /* Navigator header */
+
+/* Imposto le dimensioni dei div del menu sinistro, logo centrale 
+e menu destro  del 33,3% circa dei 1200px del suo container padre */
 .menu-left {
-    width: calc(100%  / 3);
+    width: calc(100% / 3);
 }
+
 .logo {
     text-align: center;
 }
+
 .logo img {
     width: calc(100% / 3);
 }
+
 .menu-right {
     width: calc(100% / 3);
+}
 
+/* Main */
+.main-class {
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+/* Riga dei prodotti */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* div contenente i singoli prodotti */
+.product-column {
+    position: relative;
+    width: calc((100% - 20px) / 3);
+}
+
+/* Inserisco le immagini in tutto il div in esse contenute con width: 100% */
+.product-column img {
+    width: 100%;
+    display: block;
 }
