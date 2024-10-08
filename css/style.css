@@ -135,3 +135,14 @@ e menu destro  del 33,3% circa dei 1200px del suo container padre */
     width: 100%;
     display: block;
 }
+
+/* Icone,testi e position degli elementi nei prodotti */
+.hearth {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 3em;
+    background-color: white;
+    padding: 3px 15px;
+    margin-top: 10px;
+}
