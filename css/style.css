@@ -152,6 +152,9 @@ e menu destro  del 33,3% circa dei 1200px del suo container padre */
     margin-top: 20px;
     /* Imposto un margine in basso in modo da far entrare il testo descrittivo */
     margin-bottom: 80px;
+    /* Imposto una larghezza minima così quando scalo lo schermo
+    per dispositivi più piccoli le immagini non si sovrappongono */
+    min-width: 300px;
 }
 
 /* Inserisco le immagini in tutto il div in esse contenute 
